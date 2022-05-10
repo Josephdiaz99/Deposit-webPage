@@ -16,7 +16,7 @@ $soonBtn=d.querySelector('.soon');
                   function activeVideo1(){
                     $musicChannel.classList.add('active')
                     let $template='',
-                    jsonResponse=JSON.parse(localStorage.getItem('music'));
+                    jsonResponse=JSON.parse(localStorage.getItem('music')),
                     $videosPlace=d.querySelector('.videosyt')
                     let musicData=jsonResponse.items;
          
@@ -55,7 +55,7 @@ $soonBtn=d.querySelector('.soon');
         if(e.target===$beatsChannel){
             $beatsChannel.classList.add('active')    
            let $template='',
-           jsonResponse=JSON.parse(localStorage.getItem('beats'));
+           jsonResponse=JSON.parse(localStorage.getItem('beats')),
            $videosPlace=d.querySelector('.videosyt'),
             beatsData=jsonResponse.items
 
